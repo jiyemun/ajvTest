@@ -21,6 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltestrap/sveltestrap": "^6.2.7",
 		"ajv": "^8.17.1"
 	}
 }
