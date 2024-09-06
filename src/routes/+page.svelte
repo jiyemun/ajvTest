@@ -84,7 +84,7 @@
 					invalid={!!errors.id}
 			/>
 			{#if errors.id}
-				<FormFeedback>{errors.id}   </FormFeedback>
+				<FormFeedback>{errors.id}</FormFeedback>
 			{/if}
 		</FormGroup>
 		<FormGroup>
@@ -112,7 +112,7 @@
 					invalid={!!errors.type}
 			/>
 			{#if errors.type}
-				<FormFeedback>{errors.type}    </FormFeedback>
+				<FormFeedback>{errors.type}</FormFeedback>
 			{/if}
 		</FormGroup>
 		<Button color="primary" on:click={saveForm}>Save</Button>
@@ -120,12 +120,12 @@
 	<Alert
 			children={alertMessage}
 			color="success"
-			class="fixed top-0"
+			class="fixed"
 			closeAriaLabel="Close"
 			dismissible
 			fade
 			heading="success"
-			style="width:400px"
+			style="width:400px; top:20px"
 			isOpen={showAlert}>
 	</Alert>
 </main>
