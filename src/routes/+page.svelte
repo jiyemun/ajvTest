@@ -110,10 +110,11 @@
 					placeholder="Enter Type"
 					on:input={() => validateField('type', type)}
 					invalid={!!errors.type}
+					feedback={errors.type}
 			/>
-			{#if errors.type}
-				<FormFeedback>{errors.type}</FormFeedback>
-			{/if}
+			<!--{#if errors.type}-->
+			<!--	<FormFeedback>{errors.type}</FormFeedback>-->
+			<!--{/if}-->
 		</FormGroup>
 		<Button color="primary" on:click={saveForm}>Save</Button>
 	</Form>
